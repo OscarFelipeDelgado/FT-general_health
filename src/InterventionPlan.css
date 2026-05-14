@@ -1,0 +1,179 @@
+.reevaluation-box {
+
+  margin-top: 30px;
+
+  background: linear-gradient(
+    135deg,
+    #eff6ff,
+    #f8fafc
+  );
+
+  border: 1px solid #bfdbfe;
+
+  padding: 28px;
+
+  border-radius: 24px;
+}
+
+.reevaluation-box h3 {
+
+  color: #1d4ed8;
+
+  margin-bottom: 12px;
+}
+
+.reevaluation-box p {
+
+  color: #475569;
+
+  line-height: 1.7;
+}
+
+.reevaluate-button {
+
+  margin-top: 20px;
+
+  background: #2563eb;
+}
+
+.reevaluate-button:hover {
+
+  background: #1d4ed8;
+}
+
+/* 🔥 BOTÓN ACTIVIDAD COMPLETADA */
+
+.completed-button {
+  width: 100%;
+  margin-top: 18px;
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  background: #22c55e;
+  color: white;
+  font-weight: 700;
+  cursor: not-allowed;
+}
+
+/* 🔥 BOTÓN MARCAR ACTIVIDAD */
+
+.complete-button {
+  width: 100%;
+  margin-top: 18px;
+  padding: 14px;
+  border: none;
+  border-radius: 14px;
+  background: #2563eb;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.complete-button:hover {
+  background: #1d4ed8;
+}
+
+/* 🔥 GUARDAR REFLEXIÓN */
+
+.save-reflection {
+  width: 100%;
+  padding: 16px;
+  border: none;
+  border-radius: 16px;
+  background: #8b5cf6;
+  color: white;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.save-reflection:hover {
+  background: #7c3aed;
+}
+
+/* 🔥 NUEVA EVALUACIÓN */
+
+.reevaluation-button {
+  width: 100%;
+  padding: 18px;
+  border: none;
+  border-radius: 18px;
+  background: #f97316;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 20px;
+}
+
+.reevaluation-button:hover {
+  background: #ea580c;
+}
+
+/* 🔥 TARJETA REEVALUACIÓN */
+
+.reevaluation-card {
+  margin-top: 30px;
+  background: white;
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.reevaluation-card h2 {
+  color: #1e293b;
+  margin-bottom: 15px;
+}
+
+.reevaluation-card p {
+  color: #475569;
+  line-height: 1.7;
+}
+
+.reevaluation-days {
+  margin-top: 18px;
+  font-size: 17px;
+  color: #0f172a;
+}
+
+/* 🔥 REFLEXIÓN */
+
+.reflection-card {
+  margin-top: 30px;
+  background: white;
+  padding: 30px;
+  border-radius: 24px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.reflection-card textarea {
+  width: 100%;
+  min-height: 140px;
+  margin-top: 20px;
+  padding: 18px;
+  border-radius: 18px;
+  border: 1px solid #dbeafe;
+  resize: vertical;
+  font-size: 15px;
+  outline: none;
+}
+
+/* 🔥 ACTIVIDAD COMPLETADA */
+
+.completed-card {
+  border: 2px solid #22c55e;
+  background: #f0fdf4;
+}
+
+.done-badge {
+  background: #22c55e;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}

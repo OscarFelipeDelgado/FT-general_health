@@ -1,0 +1,182 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #eef5f1, #f8fbf9);
+}
+
+/* CONTENEDOR PRINCIPAL */
+.login-wrapper {
+  display: flex;
+  height: 100vh;
+}
+
+/* LADO IZQUIERDO */
+.login-left {
+  flex: 1;
+  background: linear-gradient(135deg, #e8f3ec, #f6f9f7);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* EFECTO SUAVE */
+.login-left::after {
+  content: "";
+  position: absolute;
+  bottom: -80px;
+  left: -80px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, #dcefe4, transparent);
+  border-radius: 50%;
+}
+
+/* TEXTO */
+.login-left h1 {
+  color: #2f4f3f;
+  font-size: 34px;
+  margin-bottom: 10px;
+}
+
+.login-left p {
+  color: #5c6f65;
+  max-width: 320px;
+  line-height: 1.6;
+}
+
+/* LOGO MEJORADO */
+.logo {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 30% 30%, #9bbfa9, #6f967d);
+  margin-bottom: 25px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+/* LADO DERECHO */
+.login-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* TARJETA */
+.card {
+  width: 340px;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+  text-align: center;
+}
+
+/* TITULOS */
+.card h2 {
+  color: #2f4f3f;
+  margin-bottom: 5px;
+}
+
+.card p {
+  color: #7a8a82;
+  font-size: 14px;
+  margin-bottom: 25px;
+}
+
+/* INPUT GROUP */
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #f3f7f4;
+  border-radius: 12px;
+  padding: 12px;
+  margin-bottom: 12px;
+  transition: 0.3s;
+  border: 1px solid transparent;
+}
+
+.input-group:focus-within {
+  border-color: #9bbfa9;
+  background: #ffffff;
+}
+
+.input-group span {
+  margin-right: 8px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 14px;
+}
+
+/* OLVIDASTE */
+.forgot {
+  font-size: 12px;
+  color: #7fa98c;
+  text-align: right;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+/* BOTÓN */
+.btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #7fa98c, #6f967d);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-weight: 500;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+
+/* DIVISOR */
+.divider {
+  margin: 20px 0;
+  font-size: 12px;
+  color: #9aa8a1;
+}
+
+/* SOCIAL LOGIN */
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.socials button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #e1e7e3;
+  background: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.socials button:hover {
+  background: #f3f7f4;
+}
+
+/* SEGURIDAD */
+.secure {
+  display: block;
+  margin-top: 15px;
+  font-size: 12px;
+  color: #8a9b92;
+}
