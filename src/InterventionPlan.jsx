@@ -1,7 +1,7 @@
 import { useMemo, useState, useEffect } from "react";
 import axios from "axios";
 import "./InterventionPlan.css";
-import api from "./config/api/axios";
+import API_URL from "./config/api/axios";
 
 function InterventionPlan({
   data,

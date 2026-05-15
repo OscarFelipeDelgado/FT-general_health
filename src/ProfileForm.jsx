@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./Login.css";
-import api from "./config/api/axios";
+import API_URL from "./config/api/axios";
 
 function ProfileForm({
   onBack,

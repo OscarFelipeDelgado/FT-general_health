@@ -8,7 +8,7 @@ import ProfileForm from "./ProfileForm";
 import InterventionPlan from "./InterventionPlan";
 import EmotionalInterpretation from "./EmotionalInterpretation";
 import Navbar from "./Navbar";
-import api from "./config/api/axios";
+import API_URL from "./config/api/axios";
 
 import {
   Chart as ChartJS,
