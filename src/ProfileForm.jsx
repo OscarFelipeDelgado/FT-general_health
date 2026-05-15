@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./Login.css";
-import API_URL from "./config/api/axios";
+import api from "./config/api/axios";
 
 function ProfileForm({
   onBack,
@@ -32,8 +32,8 @@ function ProfileForm({
 
     setLoading(true);
 
-    axios.get(
-      `${API_URL}/api/profile/`,
+    api.get(
+      "/api/profile/",
       {
         headers: {
           Authorization: `Bearer ${token}`
@@ -119,8 +119,8 @@ function ProfileForm({
 
     setLoading(true);
 
-    axios.post(
-      `${API_URL}/api/register/`,
+    api.post(
+      "/api/register/",
       form
     )
     .then(res => {
@@ -153,8 +153,8 @@ function ProfileForm({
 
     setLoading(true);
 
-    axios.put(
-      `${API_URL}/api/profile/update/`,
+    api.put(
+      "/api/profile/update/",
       {
         first_name: form.first_name,
         last_name: form.last_name,

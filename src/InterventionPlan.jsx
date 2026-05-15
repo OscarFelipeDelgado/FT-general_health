@@ -1,7 +1,7 @@
 import { useMemo, useState, useEffect } from "react";
 import axios from "axios";
 import "./InterventionPlan.css";
-import API_URL from "./config/api/axios";
+import api from "./config/api/axios";
 
 function InterventionPlan({
   data,
@@ -173,8 +173,8 @@ function InterventionPlan({
 
     try {
 
-      await axios.post(
-        `${API_URL}/api/intervention/complete/`,
+      await api.post(
+        "/api/intervention/complete/",
         {
           evaluation_id: data.id,
           title
@@ -221,8 +221,8 @@ function InterventionPlan({
 
       setSavingReflection(true);
 
-      await axios.post(
-        `${API_URL}/api/intervention/reflection/`,
+      await api.post(
+        "/api/intervention/reflection/",
         {
           evaluation_id: data.id,
           reflection

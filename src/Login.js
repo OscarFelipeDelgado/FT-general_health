@@ -1,7 +1,7 @@
 import { useState } from "react";
 import axios from "axios";
 import "./Login.css";
-import API_URL from "./config/api/axios";
+import api from "./config/api/axios";
 
 function Login({ setToken, goRegister }) { // 👈 agregado goRegister
   const [username, setUsername] = useState("");
@@ -9,7 +9,7 @@ function Login({ setToken, goRegister }) { // 👈 agregado goRegister
   const [showPassword, setShowPassword] = useState(false);
 
   const handleLogin = () => {
-    axios.post(`${API_URL}/api/token/`, {
+    api.post("/api/token/", {
       username,
       password
     })
