@@ -8,6 +8,7 @@ import ProfileForm from "./ProfileForm";
 import InterventionPlan from "./InterventionPlan";
 import EmotionalInterpretation from "./EmotionalInterpretation";
 import Navbar from "./Navbar";
+import api from "./config/api/axios";
 
 import {
   Chart as ChartJS,
@@ -71,7 +72,7 @@ function App() {
 
     // 🔥 VALIDAR PERFIL
     axios.get(
-      "http://127.0.0.1:8000/api/check-profile/",
+      `${API_URL}/api/check-profile/`,
       {
         headers: {
           Authorization: `Bearer ${token}`
@@ -102,7 +103,7 @@ function App() {
 
     // 🔵 DASHBOARD
     axios.get(
-      "http://127.0.0.1:8000/api/dashboard/",
+      `${API_URL}/api/dashboard/`,
       {
         headers: {
           Authorization: `Bearer ${token}`
@@ -114,7 +115,7 @@ function App() {
 
     // 🔵 HISTORIAL
     axios.get(
-      "http://127.0.0.1:8000/api/history/",
+      `${API_URL}/api/history/`,
       {
         headers: {
           Authorization: `Bearer ${token}`

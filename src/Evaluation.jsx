@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
 import "./Evaluation.css";
+import api from "./config/api/axios";
 
 function Evaluation({
   token,
@@ -167,7 +168,7 @@ const negativeQuestions = [
   useEffect(() => {
 
     axios.get(
-      "http://127.0.0.1:8000/api/questions/"
+      `${API_URL}/api/questions/`
     )
       .then(res => {
 
@@ -233,7 +234,7 @@ const negativeQuestions = [
     setLoading(true);
 
     axios.post(
-      "http://127.0.0.1:8000/api/evaluate/",
+      `${API_URL}/api/evaluate/`,
       {
         answers: formatted
       },

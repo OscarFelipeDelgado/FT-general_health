@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./Login.css";
+import api from "./config/api/axios";
 
 function ProfileForm({
   onBack,
@@ -32,7 +33,7 @@ function ProfileForm({
     setLoading(true);
 
     axios.get(
-      "http://127.0.0.1:8000/api/profile/",
+      `${API_URL}/api/profile/`,
       {
         headers: {
           Authorization: `Bearer ${token}`
@@ -119,7 +120,7 @@ function ProfileForm({
     setLoading(true);
 
     axios.post(
-      "http://127.0.0.1:8000/api/register/",
+      `${API_URL}/api/register/`,
       form
     )
     .then(res => {
@@ -153,7 +154,7 @@ function ProfileForm({
     setLoading(true);
 
     axios.put(
-      "http://127.0.0.1:8000/api/profile/update/",
+      `${API_URL}/api/profile/update/`,
       {
         first_name: form.first_name,
         last_name: form.last_name,
